@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/996973c893.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    
+
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- My jQuery -->
+    <script src="main.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+    <title>Covid-19 Tracker India</title>
+  </head>
+  <body>
+
+ <div class="nav">
+            <div class="logo">
+                <h4>Covid-19 Tracker</h4>
+            </div>
+            
+  </div>
+
+<div class="hero-v1">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-6 sm_center">
+          <span class="d-block subheading">Covid-19 Awareness</span>
+            <h1 class="heading mb-3 ">#Stay Healthy <br> #Stay safe.</h1>
+              <p class="mb-5 sub_text">Lets all work together to put an end to this pandemic.</p>
+             
+            
+        </div>
+        <div class="col-lg-6">
+          <figure class="illustration">
+            <img src="img/index.png" alt="Image" class="img-fluid">
+          </figure>
+        </div>
+      
+      </div>
+   </div>
+</div>
+
+
+
+
+
+<div class="container-fluid py-2  text-center xx" >
+      <h1 class="statistics">Corona virus statistics</h1>
+      <!--<h5 class="text-muted">
+        An opensource project to keep track of all the COVID-19 cases around the
+        world.
+      </h5>-->
+</div>
+
+    <div class="container " id="statistics">
+      <div class="row text-center blockss">
+        <div class="picks   ">
+          <h5>Confirmed</h5>
+          <p id="confirmed"></p>
+        </div>
+        <div class="picks ">
+          <h5>Active</h5>
+          <p id="active"></p>
+        </div>
+        <div class="picks">
+          <h5>Recovered</h5>
+          <p id="recovered"></p>
+        </div>
+        <div class="picks ">
+          <h5>Deceased</h5>
+          <p id="deaths"></p>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <div class="graph_chart">
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="container text-center my-3">
+      <h6 class="text-info">
+        *Click on the Confirmed/Recovered/Deaths buttons above to see the chart
+        individually.*
+      </h6>
+    </div>
+
+
+
+
+
+
+    <section class="symptoms py-5" id="symptoms">
+        <div class="container">
+            <div class="row">
+               
+                    <div class="ftitle ">
+                        <h2 class="subheading">Symptoms</h2>
+
+                    </div>
+               
+                
+                    <div class="sym-img">
+                        <img src="img/symptoms.png">
+                    </div>
+              
+            </div>
+        </div>
+	</section>
+		
+
+<section class="contagion py-5" id="contagion">
+        <div class="container">
+            <div class="row ">
+               
+                    <div class="ftitle">
+                       
+                        <h2 class="subheading">Spreading of COVID</h2>
+        
+                    </div>
+								</div>
+								<div class="cardss ">
+									
+											<div class="cont-item">
+													<img src="img/cl.png">
+													<h3>Coughing Or Sneezing</h3>
+													<p>
+														Coronavirus can spread if an infected person coughs or sneezes
+													</p>
+											</div>
+									
+									
+											<div class="cont-item">
+													<img src="img/c2.png">
+													<h3>Human Contacts</h3>
+													<p>
+															Direct skin-to-skin contact increases likelihood of infection.
+													</p>
+											</div>
+									
+									
+											<div class="cont-item">
+													<img src="img/c3.png">
+													<h3>Contained Objects</h3>
+													<p>
+															Unsanitized or infected surfaces can increase the likelihood of infection
+													</p>
+											</div>
+									
+								</div>
+            </div>
+        </div>
+    </section>
+<!--
+<div class="prevention-box py-5 " id="prevention">
+	<div class="container ">
+		<div class="row ">
+				
+						<div class="ftitle">
+							
+								<h2 class="subheading">Preventions</h2>
+								<p>
+										Always take these precautions to protect yourself and loved ones from the novel coronavirus.
+								</p>
+						</div>
+				
+		</div>
+	</div>						
+		
+		<div class="box b1">
+			<i class="flaticon-washing-hands"></i>
+			<p>
+				Wash your hands as frequently as you can, especially before meals, after coughing or sneezing
+			</p>
+		</div>
+		<div class="box b2">
+			<i class="flaticon-sneeze"></i>
+			<p>
+			
+				Always wear a mask in public places. Dicard or wash the mask after usage.
+			</p>
+		</div>
+		<div class="box b3">
+			<i class="flaticon-distance"></i>
+			<p>
+			
+				Avoid close contact with people who are unwell. Maintain 3 feet distance atleast in public places
+			</p>
+		</div>
+		<div class="box b4">
+			<i class="flaticon-stay-at-home"></i>
+			<p>
+				
+				Stay home and self-isolate from others in the household if you feel unwell
+			</p>
+	</div>
+</div>-->
+
+
+
+
+
+
+<div class="wrapper9">
+			<div class="container9">
+				<div class="material9">
+					<div class="content9">
+						<h2>Preventions</h2>
+						<p>Always take these precautions to protect yourself and loved ones from the novel coronavirus.</p>
+
+					</div>
+
+
+					<div class="features">
+
+						<div class="features-group-1">
+
+							<div class="features-1">
+
+									<i class="flaticon-washing-hands"></i>
+								<p>Wash your hands as frequently as you can, especially before meals, after coughing or sneezing</p>
+							</div>
+
+							<div class="features-2">
+
+									<i class="flaticon-sneeze"></i>
+								<p>Always wear a mask in public places. Dicard or wash the mask after usage.</p>
+
+							</div>
+
+
+						</div>
+
+						<div class="features-group-2">
+							<div class="features-3">
+
+								<i class="flaticon-distance"></i>
+								<p>Avoid close contact with people who are unwell. Maintain 3 feet distance atleast in public places</p>
+              </div>
+              <div class="features-4">
+
+								<i class="flaticon-stay-at-home"></i>
+								<p>Stay home and self-isolate from others in the household if you feel unwell</p>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+</div>
+
+
+
+<footer class="footer mt-5 py-3">
+      <div class="container text-center">
+        <span class="text-muted"
+          >Copyright &copy;G.Sasank
+      </div>
+  </footer>
+
+
+ </body>
+</html>
